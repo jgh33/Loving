@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6lj-4I-LeV">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--爱的创作-->
+        <scene sceneID="BJn-xx-XHb">
+            <objects>
+                <viewController id="I4B-LD-0Yk" customClass="JGHCreateVC" customModule="Loving" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qha-Yr-QRR"/>
+                        <viewControllerLayoutGuide type="bottom" id="IBi-V1-LPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="55J-qj-e8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-mR-NAk">
+                                <rect key="frame" x="16" y="110" width="288" height="401"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="题目" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Mn-1f-23D">
+                                <rect key="frame" x="16" y="72" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="title_end" destination="I4B-LD-0Yk" eventType="editingDidEndOnExit" id="xR3-V1-5gT"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IBi-V1-LPb" firstAttribute="top" secondItem="Gkg-mR-NAk" secondAttribute="bottom" constant="8" id="3L2-YL-CQR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Mn-1f-23D" secondAttribute="trailing" id="4j2-BY-KKo"/>
+                            <constraint firstItem="Gkg-mR-NAk" firstAttribute="top" secondItem="6Mn-1f-23D" secondAttribute="bottom" constant="8" id="Tam-IF-iyR"/>
+                            <constraint firstItem="6Mn-1f-23D" firstAttribute="top" secondItem="Qha-Yr-QRR" secondAttribute="bottom" constant="8" id="Vko-PT-GL0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gkg-mR-NAk" secondAttribute="trailing" id="YY0-U3-NOV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Gkg-mR-NAk" secondAttribute="leading" id="kgU-eu-CSr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6Mn-1f-23D" secondAttribute="leading" id="kmB-XH-UsG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="爱的创作" id="eHv-vO-qCw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="KeZ-Lv-7ya">
+                            <color key="tintColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cancel:" destination="I4B-LD-0Yk" id="r50-rq-vya"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="0mg-hW-TFF">
+                            <color key="tintColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="uploadStory:" destination="I4B-LD-0Yk" id="dwk-QH-jUt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentztextView" destination="Gkg-mR-NAk" id="hzf-bU-Y5J"/>
+                        <outlet property="titleField" destination="6Mn-1f-23D" id="ipF-59-FuM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="een-0N-hNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.5" y="1539.0845070422536"/>
+        </scene>
+        <!--Create-->
+        <scene sceneID="7M6-xE-FnK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6lj-4I-LeV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Create" id="f9Y-76-6G1"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Tq3-Mf-pQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I4B-LD-0Yk" kind="relationship" relationship="rootViewController" id="ZsC-PN-GAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haI-XL-qQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397" y="1541"/>
+        </scene>
+    </scenes>
+</document>

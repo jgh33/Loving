@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.1.0)
+  - AlamofireImage (3.1.0):
+    - Alamofire (~> 4.0)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
+  - Toast (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.1.0)
+  - AlamofireImage (~> 3.1.0)
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.12)
+  - Toast (~> 3.1.0)
+
+SPEC CHECKSUMS:
+  Alamofire: e266cf991b933498df791e645e0d8ac294492153
+  AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+
+PODFILE CHECKSUM: bcb3be50a2b602d02861f0e91b12d2e20a093949
+
+COCOAPODS: 1.2.0.beta.1

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01j-pe-fJ5">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--爱的瞬间-->
+        <scene sceneID="GEi-Ra-UIa">
+            <objects>
+                <viewController id="RRY-ID-hDI" customClass="LovingPhotosCollectionVC" customModule="Loving" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lka-16-c3d"/>
+                        <viewControllerLayoutGuide type="bottom" id="IDR-hu-AhJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nUG-U8-EPs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="爱的瞬间" id="QLT-v0-feL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="8rQ-Pp-1Tk">
+                            <color key="tintColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="refreshPhotos:" destination="RRY-ID-hDI" id="crv-9I-9on"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="6kG-4k-fWJ">
+                            <color key="tintColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="uploadPhotos:" destination="RRY-ID-hDI" id="Fbu-zo-VS1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a1-Rc-loK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139" y="2326"/>
+        </scene>
+        <!--Loving PhotoVC-->
+        <scene sceneID="yrT-UI-gHF">
+            <objects>
+                <viewController id="iFP-nw-hG5" customClass="LovingPhotoVC" customModule="Loving" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iWV-GK-fHq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ig0-wP-NTq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8H6-gf-J0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqY-kX-7p2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2831.25" y="2325"/>
+        </scene>
+        <!--Circle-->
+        <scene sceneID="lnx-k9-87w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="01j-pe-fJ5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Circle" id="ciq-VH-tlA"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q6n-XL-S9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.29917851090000003" green="0.76120901110000005" blue="0.48449808360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RRY-ID-hDI" kind="relationship" relationship="rootViewController" id="CI0-Zi-GCt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBR-jh-ssl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397" y="2327"/>
+        </scene>
+    </scenes>
+</document>
