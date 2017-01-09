@@ -58,7 +58,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
                 UNUserNotificationCenter.current().delegate = self
                 UIApplication.shared.registerForRemoteNotifications()
                 //创建本地通知
-                let contents = self.content(withTitle: "本地通知", subtitle: "爱你", body: "每时每刻都在像你", sound: nil, badge: 1, categoryIdentifier:"message")
+                let contents = self.content(withTitle: "本地通知", subtitle: "爱你", body: "每时每刻都在想你", sound: nil, badge: 1, categoryIdentifier:"message")
                 self.registerLocalNotification(with: contents, repeats: false)
                 //注册action
                 self.registerAction()
@@ -124,7 +124,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     //创建本地通知的方法 需要自己配置时间或components
     func registerLocalNotification(with content:UNMutableNotificationContent, repeats: Bool = false) {
         
-        let timeInterval:TimeInterval = 60
+        let timeInterval:TimeInterval = 6
         let trigger1 = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: repeats)
         
 //        var components = DateComponents()

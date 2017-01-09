@@ -12,6 +12,14 @@
 		D51691591DF64783003B4987 /* JGHCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51691581DF64783003B4987 /* JGHCreateVC.swift */; };
 		D516915B1DF668EF003B4987 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516915A1DF668EF003B4987 /* NotificationManager.swift */; };
 		D516915E1DF79298003B4987 /* I Believe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D516915D1DF79298003B4987 /* I Believe.mp3 */; };
+		D552948B1E223AE500765F45 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552948A1E223AE500765F45 /* NotificationService.swift */; };
+		D552948F1E223AE500765F45 /* LovingNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D55294881E223AE400765F45 /* LovingNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D552949A1E223BA700765F45 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55294991E223BA700765F45 /* UserNotifications.framework */; };
+		D552949C1E223BA700765F45 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D552949B1E223BA700765F45 /* UserNotificationsUI.framework */; };
+		D552949F1E223BA700765F45 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552949E1E223BA700765F45 /* NotificationViewController.swift */; };
+		D55294A21E223BA700765F45 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55294A01E223BA700765F45 /* MainInterface.storyboard */; };
+		D55294A61E223BA700765F45 /* ContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D55294981E223BA700765F45 /* ContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D55294AB1E223D7500765F45 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D55294AA1E223D7500765F45 /* icon.png */; };
 		D55BE1B61DF7E46300C7D380 /* LovingPhotosCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55BE1B51DF7E46300C7D380 /* LovingPhotosCollectionVC.swift */; };
 		D55BE1B81DF7E53500C7D380 /* LovingImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55BE1B71DF7E53500C7D380 /* LovingImageCell.swift */; };
 		D55BE1C21DF8080300C7D380 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D55BE1C11DF8080300C7D380 /* icon.png */; };
@@ -31,6 +39,38 @@
 		D58CFFCF1DF40FE100F20236 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58CFFCE1DF40FE100F20236 /* NetManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D552948D1E223AE500765F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D58CFF8F1DF3EEDB00F20236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D55294871E223AE400765F45;
+			remoteInfo = LovingNotificationContentExtension;
+		};
+		D55294A41E223BA700765F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D58CFF8F1DF3EEDB00F20236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D55294971E223BA700765F45;
+			remoteInfo = ContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D55294931E223AE500765F45 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D55294A61E223BA700765F45 /* ContentExtension.appex in Embed App Extensions */,
+				D552948F1E223AE500765F45 /* LovingNotificationContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5F4CC4C4F5CDD86D48DBC923 /* Pods-Loving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loving.release.xcconfig"; path = "Pods/Target Support Files/Pods-Loving/Pods-Loving.release.xcconfig"; sourceTree = "<group>"; };
 		7813BBB0AC484B9C697CFBDB /* Pods-Loving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Loving/Pods-Loving.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +80,16 @@
 		D516915A1DF668EF003B4987 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D516915C1DF68002003B4987 /* Loving.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Loving.entitlements; sourceTree = "<group>"; };
 		D516915D1DF79298003B4987 /* I Believe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Believe.mp3"; sourceTree = "<group>"; };
+		D55294881E223AE400765F45 /* LovingNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LovingNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D552948A1E223AE500765F45 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D552948C1E223AE500765F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D55294981E223BA700765F45 /* ContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55294991E223BA700765F45 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D552949B1E223BA700765F45 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D552949E1E223BA700765F45 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		D55294A11E223BA700765F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D55294A31E223BA700765F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D55294AA1E223D7500765F45 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		D55BE1B51DF7E46300C7D380 /* LovingPhotosCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovingPhotosCollectionVC.swift; sourceTree = "<group>"; };
 		D55BE1B71DF7E53500C7D380 /* LovingImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovingImageCell.swift; sourceTree = "<group>"; };
 		D55BE1C11DF8080300C7D380 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -63,6 +113,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D55294851E223AE400765F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55294951E223BA700765F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D552949C1E223BA700765F45 /* UserNotificationsUI.framework in Frameworks */,
+				D552949A1E223BA700765F45 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58CFF941DF3EEDB00F20236 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,14 +144,39 @@
 			isa = PBXGroup;
 			children = (
 				BE666D1CB852E42F83F9C15A /* Pods_Loving.framework */,
+				D55294991E223BA700765F45 /* UserNotifications.framework */,
+				D552949B1E223BA700765F45 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D55294891E223AE400765F45 /* LovingNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D552948A1E223AE500765F45 /* NotificationService.swift */,
+				D552948C1E223AE500765F45 /* Info.plist */,
+			);
+			name = LovingNotificationServiceExtension;
+			path = LovingNotificationContentExtension;
+			sourceTree = "<group>";
+		};
+		D552949D1E223BA700765F45 /* ContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D552949E1E223BA700765F45 /* NotificationViewController.swift */,
+				D55294A01E223BA700765F45 /* MainInterface.storyboard */,
+				D55294AA1E223D7500765F45 /* icon.png */,
+				D55294A31E223BA700765F45 /* Info.plist */,
+			);
+			path = ContentExtension;
 			sourceTree = "<group>";
 		};
 		D58CFF8E1DF3EEDB00F20236 = {
 			isa = PBXGroup;
 			children = (
 				D58CFF991DF3EEDB00F20236 /* Loving */,
+				D55294891E223AE400765F45 /* LovingNotificationServiceExtension */,
+				D552949D1E223BA700765F45 /* ContentExtension */,
 				D58CFF981DF3EEDB00F20236 /* Products */,
 				FD06A4BB067C8095C8880B0F /* Pods */,
 				76AD99235AB60721C643F3AA /* Frameworks */,
@@ -96,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				D58CFF971DF3EEDB00F20236 /* Loving.app */,
+				D55294881E223AE400765F45 /* LovingNotificationContentExtension.appex */,
+				D55294981E223BA700765F45 /* ContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +292,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D55294871E223AE400765F45 /* LovingNotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55294921E223AE500765F45 /* Build configuration list for PBXNativeTarget "LovingNotificationContentExtension" */;
+			buildPhases = (
+				D55294841E223AE400765F45 /* Sources */,
+				D55294851E223AE400765F45 /* Frameworks */,
+				D55294861E223AE400765F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LovingNotificationContentExtension;
+			productName = LovingNotificationContentExtension;
+			productReference = D55294881E223AE400765F45 /* LovingNotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D55294971E223BA700765F45 /* ContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55294A71E223BA700765F45 /* Build configuration list for PBXNativeTarget "ContentExtension" */;
+			buildPhases = (
+				D55294941E223BA700765F45 /* Sources */,
+				D55294951E223BA700765F45 /* Frameworks */,
+				D55294961E223BA700765F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentExtension;
+			productName = ContentExtension;
+			productReference = D55294981E223BA700765F45 /* ContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D58CFF961DF3EEDB00F20236 /* Loving */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D58CFFA91DF3EEDB00F20236 /* Build configuration list for PBXNativeTarget "Loving" */;
@@ -209,10 +336,13 @@
 				D58CFF951DF3EEDB00F20236 /* Resources */,
 				54D010F2F824CED63D36954C /* [CP] Embed Pods Frameworks */,
 				5D3B7F1CB7DCCB5B76868BB2 /* [CP] Copy Pods Resources */,
+				D55294931E223AE500765F45 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D552948E1E223AE500765F45 /* PBXTargetDependency */,
+				D55294A51E223BA700765F45 /* PBXTargetDependency */,
 			);
 			name = Loving;
 			productName = Loving;
@@ -225,10 +355,20 @@
 		D58CFF8F1DF3EEDB00F20236 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = scau;
 				TargetAttributes = {
+					D55294871E223AE400765F45 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U28X3G4N5K;
+						ProvisioningStyle = Automatic;
+					};
+					D55294971E223BA700765F45 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U28X3G4N5K;
+						ProvisioningStyle = Automatic;
+					};
 					D58CFF961DF3EEDB00F20236 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = U28X3G4N5K;
@@ -259,11 +399,29 @@
 			projectRoot = "";
 			targets = (
 				D58CFF961DF3EEDB00F20236 /* Loving */,
+				D55294871E223AE400765F45 /* LovingNotificationContentExtension */,
+				D55294971E223BA700765F45 /* ContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D55294861E223AE400765F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55294961E223BA700765F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55294AB1E223D7500765F45 /* icon.png in Resources */,
+				D55294A21E223BA700765F45 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58CFF951DF3EEDB00F20236 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +489,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D55294841E223AE400765F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D552948B1E223AE500765F45 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55294941E223BA700765F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D552949F1E223BA700765F45 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58CFF931DF3EEDB00F20236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +526,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D552948E1E223AE500765F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D55294871E223AE400765F45 /* LovingNotificationContentExtension */;
+			targetProxy = D552948D1E223AE500765F45 /* PBXContainerItemProxy */;
+		};
+		D55294A51E223BA700765F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D55294971E223BA700765F45 /* ContentExtension */;
+			targetProxy = D55294A41E223BA700765F45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		D55294A01E223BA700765F45 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D55294A11E223BA700765F45 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		D58CFF9E1DF3EEDB00F20236 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -380,6 +575,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D55294901E223AE500765F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = U28X3G4N5K;
+				INFOPLIST_FILE = LovingNotificationContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scau.jgh.LovingZY.LovingNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D55294911E223AE500765F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = U28X3G4N5K;
+				INFOPLIST_FILE = LovingNotificationContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scau.jgh.LovingZY.LovingNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D55294A81E223BA700765F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = U28X3G4N5K;
+				INFOPLIST_FILE = ContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scau.jgh.LovingZY.ContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D55294A91E223BA700765F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = U28X3G4N5K;
+				INFOPLIST_FILE = ContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scau.jgh.LovingZY.ContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		D58CFFA71DF3EEDB00F20236 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7813BBB0AC484B9C697CFBDB /* Pods-Loving.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Loving/Loving.entitlements;
@@ -496,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F4CC4C4F5CDD86D48DBC923 /* Pods-Loving.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Loving/Loving.entitlements;
@@ -513,6 +770,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D55294921E223AE500765F45 /* Build configuration list for PBXNativeTarget "LovingNotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55294901E223AE500765F45 /* Debug */,
+				D55294911E223AE500765F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D55294A71E223BA700765F45 /* Build configuration list for PBXNativeTarget "ContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55294A81E223BA700765F45 /* Debug */,
+				D55294A91E223BA700765F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D58CFF921DF3EEDB00F20236 /* Build configuration list for PBXProject "Loving" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
