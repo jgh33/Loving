@@ -20,6 +20,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         // Do any required interface initialization here.
         let size = view.bounds.size
          preferredContentSize = CGSize(width: size.width, height: 64)
+        self.imageView.layer.cornerRadius = 5//添加图片的圆角效果，需要clip to bounds for playground
     }
     
     func didReceive(_ notification: UNNotification) {
